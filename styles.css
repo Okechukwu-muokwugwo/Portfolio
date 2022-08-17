@@ -23,6 +23,7 @@ body {
 .hamburger-img {
   padding-right: 36px;
 }
+
 .my-logo img {
   padding-left: 24px;
 }
@@ -69,6 +70,7 @@ body {
   justify-content: space-between;
   width: 171px;
 }
+
 ul {
   list-style-type: none;
   padding-left: 0;
