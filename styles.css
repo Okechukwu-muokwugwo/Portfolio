@@ -1,3 +1,9 @@
+/*
+-------------------------------
+Portfolio: Mobile First Project
+-------------------------------
+*/
+
 body {
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
@@ -74,4 +80,276 @@ body {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+/*
+-------------------------------------------
+Works section for the Portfolio begins here
+-------------------------------------------
+*/
+
+.works-wrapper {
+  display: grid;
+  box-sizing: border-box;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.card1-container {
+  margin-top: 114px;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+  height: 552px;
+}
+
+.card2-container {
+  margin-top: 88px;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.card3-container {
+  margin-top: 88px;
+  margin-bottom: 88px;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.card4-container {
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.image-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-img img {
+  width: 98.9%;
+}
+
+.project-title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.project-desc {
+  display: flex;
+  justify-content: space-between;
+  width: 236px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.project-desc .client {
+  color: #344563;
+}
+
+.project-desc .role {
+  color: #7a869a;
+}
+
+.project-desc .year {
+  color: #7a869a;
+}
+
+.read-msg {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.tech-tags {
+  display: flex;
+  width: 203px;
+  padding: 4px 0;
+  margin-top: 12px;
+}
+
+.tech-tags button {
+  background: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  height: 24px;
+  margin-right: 8px;
+  letter-spacing: 0.03rem;
+  border: none;
+}
+
+.tech-tags .html-btn {
+  width: 53px;
+}
+
+.tech-tags .css-btn {
+  width: 45px;
+}
+
+.tech-tags .javascript-btn {
+  width: 89px;
+}
+
+.see-project-btn {
+  width: 124px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: #fff;
+  color: #396df2;
+}
+
+/* About Myself section bgins here */
+
+.about-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1263px;
+  margin-top: 114px;
+  background: #fff;
+  border-radius: 0 100px 0 0;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 114px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #172b4d;
+}
+
+.about-desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #344563;
+}
+
+.resume-btn {
+  width: 162px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: #fff;
+  color: #396df2;
+}
+
+.language-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language-menu img {
+  padding-top: 30px;
+  margin-right: 64px;
+}
+
+.language-txt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+}
+
+.language-list p {
+  margin-left: 10px;
+}
+
+.language-list .javascript {
+  display: flex;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.language-list .html {
+  display: flex;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.language-list .css {
+  display: flex;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.language-list .frameworks {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language-list .frameworks img {
+  margin-right: 60px;
+  padding-top: 30px;
+}
+
+.language-list .skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language-list .skills img {
+  margin-right: 60px;
+  padding-top: 30px;
+}
+
+button:hover {
+  background: #6070ff;
+  color: #fff;
 }
