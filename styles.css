@@ -371,10 +371,12 @@ Contact form section begins here
   background-repeat: no-repeat;
   background-position-x: 153px;
 }
+
 .contact-section {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .contact-title {
   font-weight: 700;
   font-size: 40px;
@@ -384,23 +386,27 @@ Contact form section begins here
   padding-top: 103px;
   margin-bottom: 10px;
 }
+
 .contact-desc {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;;
+  color: #ebebff;
 }
+
 .form-items {
   display: flex;
   flex-direction: column;
   margin-right: 24px;
 }
+
 input {
   font-family: 'poppins', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
 }
+
 .form-items input {
   width: 303px;
   height: 48px;
@@ -409,12 +415,14 @@ input {
   margin-bottom: 18px;
   padding-left: 16px;
 }
+
 textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color:  #b3bac5;
+  color: #b3bac5;
 }
+
 .form-items textarea {
   width: 303px;
   height: 170px;
@@ -423,6 +431,7 @@ textarea {
   padding-left: 16px;
   padding-top: 15px;
 }
+
 .contact-btn {
   width: 140px;
   height: 48px;
