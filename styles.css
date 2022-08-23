@@ -348,10 +348,23 @@ a {
   margin-right: 60px;
   padding-top: 30px;
 }
-
+button:enabled {
+  background: #fff;
+  border: 1px solid #7f8cff;
+  color: #6070ff;
+}
 button:hover {
   background: #6070ff;
   color: #fff;
+}
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+button:disabled {
+  background: #fff;
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
 }
 
 /*
