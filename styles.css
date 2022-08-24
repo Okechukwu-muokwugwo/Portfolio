@@ -532,13 +532,14 @@ Media query for desktop version at 768px
   .card3-container {
     border: 2px solid #a7aeff;
   }
+
   .tonic {
     display: none;
   }
 
   .category-a {
     padding-right: 46px;
-    padding-left: 46px;
+    padding-left: 48px;
   }
 
   .image-holder .mobile {
