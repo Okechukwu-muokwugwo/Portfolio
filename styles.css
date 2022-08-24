@@ -479,67 +479,80 @@ Media query for desktop version at 768px
   .hamburger-img {
     display: none;
   }
+
   .intro-container {
     width: 100%;
     height: 916px;
   }
- 
+
   .main {
     background-image: url('./images/bg-desktop-pg1.svg');
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .headline {
     margin-bottom: 10px;
   }
+
   .social-icons,
   .connect-msg,
   .desc,
   .headline {
     padding-left: 7%;
   }
+
   .desc {
     width: 75%;
   }
+
   .my-logo {
     padding-left: 85px;
   }
+
   .desktop-menu {
     display: flex;
     gap: 12px;
     padding-right: 142px;
   }
-  .card1-container, 
+
+  .card1-container,
   .card2-container,
   .card3-container,
   .card4-container {
     display: flex;
     justify-content: center;
   }
+
   .card2-container,
   .card4-container {
     flex-direction: row-reverse;
   }
+
   .card3-container {
     border: 2px solid #a7aeff;
   }
   .tonic {
     display: none;
   }
+
   .category-a {
     padding-right: 46px;
     padding-left: 46px;
   }
+
   .image-holder .mobile {
     display: none;
   }
- .image-holder .desktop {
+
+  .image-holder .desktop {
     width: 95%;
- }
- .desktop img {
-  padding-right: 0;
-   width: 97.9%;
- }
+  }
+
+  .desktop img {
+    padding-right: 0;
+    width: 97.9%;
+  }
 
   /*
   ------------------------------------
@@ -551,6 +564,7 @@ Media query for desktop version at 768px
     width: 100%;
     height: 924px;
   }
+
   .about-section {
     display: flex;
     flex-direction: row;
@@ -558,16 +572,20 @@ Media query for desktop version at 768px
     padding-right: 7%;
     gap: 20px;
   }
+
   .about-block1 {
     width: 65%;
   }
+
   .about-block1 .connect-msg,
   .about-block1 .social-icons {
     padding-left: 0;
   }
+
   .language-list {
     width: 100%;
   }
+
   .language-list .javascript,
   .html,
   .css {
@@ -577,10 +595,12 @@ Media query for desktop version at 768px
     width: 122px;
     height: 120px;
   }
+
   .tech-lang {
     display: flex;
     gap: 12px;
   }
+
   .about-block2 {
     width: 100%;
     padding-top: 114px;
@@ -598,26 +618,31 @@ Media query for desktop version at 768px
     background-size: contain;
     background-position: 10% 100%;
   }
+
   .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .contact-desc {
     width: 50%;
   }
+
   .form-items {
     align-items: center;
   }
- 
 }
+
 @media (max-width: 767px) {
   .desktop-menu {
     display: none;
   }
+
   .image-holder .desktop {
     display: none;
   }
+
   .facebook {
     display: none;
   }
