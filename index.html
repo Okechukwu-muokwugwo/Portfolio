@@ -18,6 +18,11 @@
             alt="hamburger menu"
             class="hamburger-img" id="hamburger">
             </a>
+         <ul class="desktop-menu">
+            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+         </ul>
       </nav>
       </header>
          <section class="main">
@@ -36,27 +41,36 @@
                      <img src="./images/linkedin.svg" alt="linkedin handle">
                      </a></li>
                      <li><a href="#">
-                        <img src="./images/media.svg" alt="another social handle">
+                        <img src="./images/medium.svg" alt="another social handle">
                         </a></li>
                         <li><a href="#">
                            <img src="./images/github.svg" alt="github handle">
                            </a></li>
                         <li>  <a href="#">
-                         <img src="./images/social.svg" alt="social handle">
+                         <img src="./images/angel-list.svg" alt="social handle">
                              </a></li>
               </ul>
            </section>
 
        <!-- Here begins the works section -->
-       <section class="works-wrapper">
+       <section class="works-wrapper" id="portfolio">
          <div class="card1-container">
             <div class="image-holder">
+              <div class="mobile">
                <img 
-               src="./images/tonic-snapshoot-mobile1.svg" 
+               src="./images/snapshoot-mobile1.svg" 
                alt="tonic mobile snapshoot"
                class="">
+              </div>
+              <div class="desktop">
+               <img 
+               src="./images/snapshot-desktop1.svg" 
+               alt="tonic mobile snapshoot"
+               class="">
+              </div>
             </div>
-            <h1 class="project-title">Tonic</h1>
+            <div >
+               <h1 class="project-title">Tonic</h1>
             <div class="project-desc">
                <p class="client">CANOPY</p>
                <img src="./images/counter.svg" alt="counter">
@@ -71,18 +85,28 @@
                <li><button class="javascript-btn">javascript</button></li>
             </ul>
             <button class="see-project-btn">See Project</button>
+            </div>
          </div>
 
          <!-- second project begins here -->
          <section>
             <div class="card2-container">
                <div class="image-holder">
-                  <img 
-                  src="./images/snapshot-mobile2.svg" 
-                  alt="multi-stories mobile snapshoot"
-                  class="">
+                  <div class="mobile">
+                     <img 
+                     src="./images/snapshot-mobile2.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
+                    <div class="desktop">
+                     <img 
+                     src="./images/snapshot-desktop2.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
                </div>
-               <h1 class="project-title">Multi-Post <br> Stories</h1>
+               <div>
+                  <h1 class="project-title">Multi-Post <br> Stories</h1>
                <div class="project-desc">
                   <p class="client">CANOPY</p>
                   <img src="./images/counter.svg" alt="counter ">
@@ -97,6 +121,7 @@
                   <li><button class="javascript-btn">javascript</button></li>
                </ul>
                <button class="see-project-btn">See Project</button>
+               </div>
             </div>
          </section>
 
@@ -104,12 +129,26 @@
          <section>
             <div class="card3-container">
                <div class="image-holder">
-                  <img 
-                  src="./images/snapshot-mobile3.svg" 
-                  alt="tonic mobile snapshoot"
-                  class="">
+                  <div class="mobile">
+                     <img 
+                     src="./images/snapshot-mobile3.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
+                    <div class="desktop">
+                     <img 
+                     src="./images/snapshot-desktop3.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
                </div>
-               <h1 class="project-title">Tonic</h1>
+               <div>
+                  <div class="tonic">
+                     <h1 class="project-title">Tonic</h1>
+                  </div>
+                  <div class="facebook">
+                     <h1 class="project-title">Facebook 360</h1>
+                  </div>
                <div class="project-desc">
                   <p class="client">CANOPY</p>
                   <img src="./images/counter.svg" alt="counter ">
@@ -124,6 +163,7 @@
                   <li><button class="javascript-btn">javascript</button></li>
                </ul>
                <button class="see-project-btn">See Project</button>
+               </div>
             </div>
          </section>
 
@@ -131,12 +171,21 @@
          <section>
             <div class="card4-container">
                <div class="image-holder">
-                  <img 
-                  src="./images/snapshot-mobile4.svg" 
-                  alt="multi-stories mobile snapshoot"
-                  class="">
+                  <div class="mobile">
+                     <img 
+                     src="./images/snapshot-mobile4.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
+                    <div class="desktop">
+                     <img 
+                     src="./images/snapshot-desktop4.svg" 
+                     alt="tonic mobile snapshoot"
+                     class="">
+                    </div>
                </div>
-               <h1 class="project-title">Multi-Post <br>Stories</h1>
+               <div>
+                  <h1 class="project-title">Multi-Post <br>Stories</h1>
                <div class="project-desc">
                   <p class="client">CANOPY</p>
                   <img src="./images/counter.svg" alt="counter ">
@@ -151,75 +200,81 @@
                   <li><button class="javascript-btn">javascript</button></li>
                </ul>
                <button class="see-project-btn" >See Project</button>
+               </div>
             </div>
          </section>
       </section>
 
       <!-- About myself section begins here -->
-         
       <section>
          <div class="about-container" id="about">
             <div class="about-section">
-               <h1 class="about-title">About <br>Myself</h1>
-               <p class="about-desc">
-                  Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-               </p>
-               <p class="connect-msg">LET'S CONNECT</p>
-               <ul class="social-icons">
-                  <li><a href="#">
-                   <img src="./images/twitter.svg" alt="twitter handle">
-                   </a></li>
-                   <li><a href="#">
-                      <img src="./images/linkedin.svg" alt="linkedin handle">
-                      </a></li>
-                      <li><a href="#">
-                         <img src="./images/media.svg" alt="another social handle">
-                         </a></li>
-                         <li><a href="#">
-                            <img src="./images/github.svg" alt="github handle">
-                            </a></li>
-                         <li>  <a href="#">
-                          <img src="./images/social.svg" alt="social handle">
-                              </a></li>
-               </ul>
-               <button class="resume-btn">Get my resume</button>
-               <ul class="language-menu">
-                  <li><p class="language-txt">Languages</p></li>
-                 <li> <a href="#">
-                  <img src="./images/down-arrow.svg" alt="menu arrow ">
-               </a></li>
-               </ul>
-               <div class="language-list">
-                  <div class="javascript">
+               <div class="about-block1">
+                  <h1 class="about-title">About <br>Myself</h1>
+                  <p class="about-desc">
+                     Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                  </p>
+                  <p class="connect-msg">LET'S CONNECT</p>
+                  <div class="social-icons">
                      <a href="#">
-                        <img src="./images/javascript-icon.svg" alt="javascript">
-                     </a>
-                     <p>JavaScript</p>
+                        <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                           <img src="./images/linkedin.svg" alt="linkedin  ">
+                           </a>
+                           <a href="#">
+                              <img src="./images/medium.svg" alt="medium">
+                              </a>
+                              <a href="#">
+                                 <img src="./images/github.svg" alt="github handle ">
+                                 </a>
+                                 <a href="#">
+                                    <img src="./images/angel-list.svg" alt="AngelList handle">
+                                    </a> 
                   </div>
-                  <div class="html">
+                  <button class="resume-btn">Get my resume</button>
+               </div>
+               <div class="about-block2">
+                  <div class="language-menu">
+                     <p class="language-txt">Languages</p>
                      <a href="#">
-                        <img src="./images/html.svg" alt="html">
+                        <img src="./images/down-arrow.svg" alt="menu arrow ">
                      </a>
-                     <p>HTML</p>
                   </div>
-                  <div class="css">
-                     <a href="#">
-                        <img src="./images/css-icon.svg" alt="css">
-                     </a>
-                     <p>CSS</p>
+                  <div class="language-list">
+                     <div class="tech-lang">
+                        <div class="javascript">
+                           <a href="#">
+                              <img src="./images/javascript-icon.svg" alt="javascript">
+                           </a>
+                           <p>JavaScript</p>
+                        </div>
+                        <div class="html">
+                           <a href="#">
+                              <img src="./images/html.svg" alt="html">
+                           </a>
+                           <p>HTML</p>
+                        </div>
+                        <div class="css">
+                           <a href="#">
+                              <img src="./images/css-icon.svg" alt="css">
+                           </a>
+                           <p>CSS</p>
+                        </div>
+                     </div>
+                     <div class="frameworks">
+                        <p>Frameworks</p>
+                        <img src="./images/next-arrow.svg" alt="next menu">
+                     </div>
+                     <div class="skills">
+                        <p>Skills</p>
+                        <img src="./images/next-arrow.svg" alt="next menu skill">
+                     </div>
                   </div>
-                  <ul class="frameworks">
-                     <li><p>Frameworks</p></li>
-                    <li> <img src="./images/next-arrow.svg" alt="next menu"></li>
-                  </ul>
-                  <ul class="skills">
-                     <li><p>Skills</p></li>
-                     <li><img src="./images/next-arrow.svg" alt="next menu skill"></li>
-                  </ul>
                </div>
             </div>
          </div>
-      </section>
+         </section>
 
       <!--Here begins the Contact form-->
    <footer>
