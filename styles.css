@@ -101,7 +101,7 @@ Works section for the Portfolio begins here
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
-  height: 552px;
+  height: auto;
 }
 
 .card2-container {
@@ -129,7 +129,6 @@ Works section for the Portfolio begins here
 }
 
 .image-holder {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -382,7 +381,7 @@ Contact form section begins here
   height: 779px;
   background: #6070ff;
   z-index: 1;
-  margin-top: -100px;
+  margin-top: -200px;
   border-radius: 100px 0 0 0;
   background-image: url('./images/bg-contact-mobile.svg');
   background-repeat: no-repeat;
@@ -467,4 +466,196 @@ textarea {
   height: 5px;
   margin-top: 25px;
   background: #0d151e;
+}
+
+/*
+----------------------------------------
+Media query for desktop version at 768px
+-----------------------------------------
+*/
+
+@media (min-width: 768px) {
+  .hamburger-img {
+    display: none;
+  }
+
+  .intro-container {
+    width: 100%;
+    height: 916px;
+  }
+
+  .main {
+    background-image: url('./images/bg-desktop-pg1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .headline {
+    margin-bottom: 10px;
+  }
+
+  .social-icons,
+  .connect-msg,
+  .desc,
+  .headline {
+    padding-left: 7%;
+  }
+
+  .desc {
+    width: 75%;
+  }
+
+  .my-logo {
+    padding-left: 85px;
+  }
+
+  .desktop-menu {
+    display: flex;
+    gap: 12px;
+    padding-right: 142px;
+  }
+
+  .card1-container,
+  .card2-container,
+  .card3-container,
+  .card4-container {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card2-container,
+  .card4-container {
+    flex-direction: row-reverse;
+  }
+
+  .card3-container {
+    border: 2px solid #a7aeff;
+  }
+
+  .tonic {
+    display: none;
+  }
+
+  .category-a {
+    margin-left: 20px;
+  }
+
+  .read-msg {
+    width: 80%;
+  }
+
+  .image-holder .mobile {
+    display: none;
+  }
+
+  .desktop img {
+    width: 100%;
+  }
+
+  .tech-tags {
+    margin-bottom: 20px;
+  }
+
+  .end-line {
+    display: none;
+  }
+
+  /*
+  ------------------------------------
+  Media Query styles for About section
+  ------------------------------------
+  */
+
+  .about-container {
+    width: 100%;
+    height: 924px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 7%;
+    gap: 20px;
+  }
+
+  .about-title {
+    font-size: 45px;
+  }
+
+  .about-block1 {
+    width: 65%;
+  }
+
+  .about-block1 .connect-msg,
+  .about-block1 .social-icons {
+    padding-left: 0;
+  }
+
+  .language-list {
+    width: 100%;
+  }
+
+  .language-list .javascript,
+  .html,
+  .css {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 122px;
+    height: 120px;
+  }
+
+  .tech-lang {
+    display: flex;
+    gap: 12px;
+  }
+
+  .about-block2 {
+    width: 100%;
+    padding-top: 114px;
+  }
+
+  /*
+  ----------------------------------
+  Media Query for the Contact section
+  -----------------------------------
+  */
+
+  .contact-wrapper {
+    background-image: url('./images/bg-contact-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10% 100%;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-desc {
+    width: 50%;
+  }
+
+  .form-items {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .image-holder .desktop {
+    display: none;
+  }
+
+  .facebook {
+    display: none;
+  }
 }
