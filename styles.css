@@ -57,8 +57,8 @@ body {
   color: #344563;
   animation-duration: 4s;
   animation-name: slideIn;
-  animation-iteration-count: 2;   
-  animation-direction: alternate; 
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
 @keyframes slideIn {
@@ -66,6 +66,7 @@ body {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
