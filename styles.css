@@ -58,13 +58,18 @@ body {
   animation-duration: 4s;
   animation-name: slideIn;
   animation-iteration-count: 2;
-  animation-direction: alternate;
 }
 
 @keyframes slideIn {
   from {
     margin-left: 100%;
     width: 300%;
+  }
+
+  60% {
+    margin-left: 30%;
+    width: 250%;
+    font-size: 52px;
   }
 
   to {
@@ -334,6 +339,19 @@ a {
   display: flex;
   background: #f7f7f9;
   border-radius: 8px;
+}
+
+.language-list .javascript,
+.language-list .html,
+.language-list .css {
+  transition: all 4s tranform 2s;
+}
+.language-list .javascript:hover,
+.language-list .html:hover,
+.language-list .css:hover {
+  transform: scale(.75);
+  background: #545454;
+  color: #fff;
 }
 
 .language-list .frameworks {
