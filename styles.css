@@ -521,7 +521,7 @@ Media query for desktop version at 768px
   .card4-container {
     display: flex;
     width: 90%;
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -541,6 +541,7 @@ Media query for desktop version at 768px
   .category-a {
     margin-left: 20px;
   }
+
   .read-msg {
     width: 80%;
   }
@@ -548,13 +549,15 @@ Media query for desktop version at 768px
   .image-holder .mobile {
     display: none;
   }
- 
+
   .desktop img {
     width: 100%;
   }
+
   .tech-tags {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
+
   .end-line {
     display: none;
   }
@@ -577,6 +580,7 @@ Media query for desktop version at 768px
     padding-right: 7%;
     gap: 20px;
   }
+
   .about-title {
     font-size: 45px;
   }
