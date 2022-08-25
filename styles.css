@@ -346,10 +346,11 @@ a {
 .language-list .css {
   transition: all 4s tranform 2s;
 }
+
 .language-list .javascript:hover,
 .language-list .html:hover,
 .language-list .css:hover {
-  transform: scale(.75);
+  transform: scale(0.75);
   background: #545454;
   color: #fff;
 }
