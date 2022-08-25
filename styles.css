@@ -129,7 +129,6 @@ Works section for the Portfolio begins here
 }
 
 .image-holder {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -521,7 +520,9 @@ Media query for desktop version at 768px
   .card3-container,
   .card4-container {
     display: flex;
-    justify-content: center;
+    width: 90%;
+    margin-left:  auto;
+    margin-right: auto;
   }
 
   .card2-container,
@@ -538,21 +539,24 @@ Media query for desktop version at 768px
   }
 
   .category-a {
-    padding-right: 46px;
-    padding-left: 48px;
+    margin-left: 20px;
+  }
+  .read-msg {
+    width: 80%;
   }
 
   .image-holder .mobile {
     display: none;
   }
-
-  .image-holder .desktop {
-    width: 95%;
-  }
-
+ 
   .desktop img {
-    padding-right: 0;
-    width: 97.9%;
+    width: 100%;
+  }
+  .tech-tags {
+    margin-bottom: 10px;
+  }
+  .end-line {
+    display: none;
   }
 
   /*
@@ -572,6 +576,9 @@ Media query for desktop version at 768px
     padding-left: 7%;
     padding-right: 7%;
     gap: 20px;
+  }
+  .about-title {
+    font-size: 45px;
   }
 
   .about-block1 {
