@@ -11,6 +11,8 @@
 - CSS
 - Linters: webhint, stylelint
 
+## Live Demo
+Checkout my portfolio <code>https://okechukwu-muokwugwo.github.io/Okechukwu-Portfolio</code>
 
 ## Getting Started
 
