@@ -54,7 +54,7 @@ body {
   margin-bottom: 10px;
   line-height: 52px;
   padding-top: 120px;
-  color: #344563;
+  color: #091e42;
   animation-duration: 4s;
   animation-name: slideIn;
   animation-iteration-count: 2;
@@ -268,7 +268,7 @@ Works section for the Portfolio begins here
   padding-top: 114px;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .about-desc {
@@ -351,7 +351,7 @@ a {
 .language-list .html:hover,
 .language-list .css:hover {
   transform: scale(0.75);
-  background: #545454;
+  background: #6070ff;
   color: #fff;
 }
 
