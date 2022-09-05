@@ -8,11 +8,11 @@
 </head>
 <body>
     <header class="toolbar">
-      <a href="#">
+      <a href="#" >
       <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
       </a>
       <nav>
-         <a href="#">
+         <a href="#" onclick="toggleOverlay()">
             <img 
             src="./images/hamburger.svg" 
             alt="hamburger menu"
@@ -54,11 +54,10 @@
 
            <!-- Overlay for the hamburger menu -->
          <div  class="overlay" id="overlay1">
-            <div class="overlay-bar"><img src="./images/dark.svg" alt=""></div>
             <div class="close-icon" >
                <a href="#" onclick="toggleOffOverlay()">
                   <img 
-                  src="./images/close-btn.svg" 
+                  src="./images/close.svg" 
                   alt="hamburger close"
                   class="close-img" id="close" >
                   </a>
@@ -322,6 +321,6 @@
          <hr class="end-line">
          </div>
       </footer>
-
+<script src="./script.js"></script>
 </body>
 </html>
