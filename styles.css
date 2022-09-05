@@ -121,6 +121,7 @@ Overlay for the hamburger menu
   backdrop-filter: blur(4px);
   z-index: 1;
 }
+
 .overlay-menu {
   padding-top: 20px;
 }
