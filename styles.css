@@ -122,6 +122,18 @@ Overlay for the hamburger menu
   z-index: 1;
 }
 
+.overlay-menu {
+  padding-top: 50px; 
+}
+.overlay p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding-left: 28px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
 .close-icon img {
   float: right;
   padding-top: 33.7px;
