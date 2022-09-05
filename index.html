@@ -12,7 +12,7 @@
       <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
       </a>
       <nav>
-         <a href="#">
+         <a href="#" onclick="toggleOverlay()">
             <img 
             src="./images/hamburger.svg" 
             alt="hamburger menu"
@@ -51,6 +51,25 @@
                              </a></li>
               </ul>
            </section>
+
+           <!-- Overlay for the hamburger menu -->
+         <div  class="overlay" id="overlay1">
+            <div class="close-icon" >
+               <a href="#" onclick="toggleOffOverlay()">
+                  <img 
+                  src="./images/close.svg" 
+                  alt="hamburger close"
+                  class="close-img" id="close" >
+                  </a>
+            </div>
+            <nav class="overlay-menu" onclick="toggleOffOverlay()">
+               
+            </nav>
+            <div class="empty-space">
+               <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p> 
+            </div>
+            <hr class="end-line">
+         </div>
 
        <!-- Here begins the works section -->
        <section class="works-wrapper" id="portfolio">
@@ -303,5 +322,6 @@
          </div>
       </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
