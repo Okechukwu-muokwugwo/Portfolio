@@ -104,6 +104,53 @@ ul {
 }
 
 /*
+-------------------------------
+Overlay for the hamburger menu
+-------------------------------
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 25px;
+  display: none;
+  width: 100%;
+  height: 812px;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+
+
+.overlay p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding-left: 28px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.close-icon img {
+  float: right;
+  padding-top: 25.7px;
+  padding-right: 38px;
+  width: 16px;
+  height: 16px;
+}
+
+.empty-space {
+  visibility: hidden;
+}
+
+.overlay-bar {
+  position: absolute;
+  top: 0;
+}
+
+/*
 -------------------------------------------
 Works section for the Portfolio begins here
 -------------------------------------------
