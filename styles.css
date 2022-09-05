@@ -112,7 +112,7 @@ Overlay for the hamburger menu
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   display: none;
   width: 100%;
   height: 812px;
@@ -121,10 +121,10 @@ Overlay for the hamburger menu
   backdrop-filter: blur(4px);
   z-index: 1;
 }
-
 .overlay-menu {
-  padding-top: 50px; 
+  padding-top: 20px;
 }
+
 .overlay p {
   font-weight: 600;
   font-size: 32px;
@@ -141,9 +141,11 @@ Overlay for the hamburger menu
   width: 16px;
   height: 16px;
 }
+
 .empty-space {
   visibility: hidden;
 }
+
 .overlay-bar {
   position: absolute;
   top: 0;
