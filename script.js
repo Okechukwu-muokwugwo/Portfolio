@@ -201,7 +201,10 @@ const popUpWindow = projectData.map((project) => `<div class="popup-container" i
 
 const modal = document.getElementById('popup');
 modal.innerHTML = popUpWindow;
-
+function closePopUpWindow() {
+  modal.style.display = 'none';
+}
+closePopUpWindow();
 // function to display the popup Window
 
 function displayPopUp() {
