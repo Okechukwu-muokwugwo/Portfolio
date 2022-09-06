@@ -553,6 +553,50 @@ textarea {
 }
 
 /*
+-------------------------------------
+style for popup dialog
+-------------------------------------
+*/
+.popup-container {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 4s ease-in-out 2s;
+}
+
+.popup-container:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-holder {
+  margin: 60px 16px 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.close-popup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-btn {
+  margin-top: 45px;
+  align-items: center;
+}
+
+.live-btn .see-live .see-source img {
+  width: 136px;
+  height: 48px;
+}
+
+/*
 ----------------------------------------
 Media query for desktop version at 768px
 -----------------------------------------
@@ -727,6 +771,36 @@ Media query for desktop version at 768px
 
   .form-items {
     align-items: center;
+  }
+
+  /*
+  -------------------------
+   Popup Window Media Query
+   ------------------------
+  */
+
+  .popup-holder {
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    width: 70%;
+  }
+
+  .read-desc {
+    margin-right: 20px;
+  }
+
+  .bottom-block {
+    display: flex;
+  }
+
+  .live-btn {
+    display: flex;
+  }
+
+  .live-btn img {
+    width: 100px;
+    margin-right: 10px;
   }
 }
 
