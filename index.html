@@ -12,7 +12,7 @@
       <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
       </a>
       <nav>
-         <a href="#" onclick="toggleOverlay()">
+         <a href="#" onclick="showMobileMenu()">
             <img 
             src="./images/hamburger.svg" 
             alt="hamburger menu"
@@ -53,16 +53,16 @@
            </section>
 
            <!-- Overlay for the hamburger menu -->
-         <div  class="overlay" id="overlay1">
+         <div  id="mobile-menu">
             <div class="close-icon" >
-               <a href="#" onclick="toggleOffOverlay()">
+               <a href="#" onclick="exitMobileMenu()">
                   <img 
                   src="./images/close.svg" 
                   alt="hamburger close"
                   class="close-img" id="close" >
                   </a>
             </div>
-            <nav class="overlay-menu" onclick="toggleOffOverlay()">
+            <nav class="overlay-menu" onclick="exitMobileMenu()">
               <a href="#portfolio">
                   <p>Portfolio</p>
                </a>
@@ -173,7 +173,7 @@
                   <label for="message">
                      <textarea name="user_msg" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
                   </label>
-                  <span class="err-msg" id="err-msg"></span>
+                  <span class="error-msg"></span>
                   <button type="submit" class="contact-btn">Get in Touch</button>
                </div>
             </form>

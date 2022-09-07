@@ -207,7 +207,7 @@ Works section for the Portfolio begins here
   width: 98.9%;
 }
 
-.project-title {
+.work-title {
   margin-top: 7px;
   margin-bottom: 7px;
   font-weight: 700;
@@ -545,7 +545,8 @@ textarea {
   color: #6070ff;
 }
 
-.err-msg {
+.error-msg {
+  background: rgba(100, 50, 0, 0.2);
   color: #f00;
 }
 
