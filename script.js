@@ -233,7 +233,16 @@ const getInTouch = document.querySelector('.contact-btn');
 const errMsg = document.querySelector('.err-msg');
 
 // check for input validity
-
+function checkMail(mail) {
+  let result = false;
+  const mailToLowerCase = mail.value.toLowerCase();
+  if (mail.value === mailToLowerCase) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
+}
 
 // adding eventlistener to Get in touch button
 
