@@ -108,7 +108,7 @@ ul {
 Overlay for the hamburger menu
 -------------------------------
 */
-.overlay {
+.mobile-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ Overlay for the hamburger menu
   padding-top: 20px;
 }
 
-.overlay p {
+.mobile-nav p {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -137,19 +137,14 @@ Overlay for the hamburger menu
 
 .close-icon img {
   float: right;
-  padding-top: 33.7px;
-  padding-right: 38px;
+  padding-top: 25.7px;
+  padding-right: 40px;
   width: 16px;
   height: 16px;
 }
 
 .empty-space {
   visibility: hidden;
-}
-
-.overlay-bar {
-  position: absolute;
-  top: 0;
 }
 
 /*
@@ -612,6 +607,17 @@ Media query for desktop version at 768px
     display: none;
   }
 
+  .toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+  }
+
   .intro-container {
     width: 100%;
     height: 916px;
@@ -621,6 +627,7 @@ Media query for desktop version at 768px
     background-image: url('./images/bg-desktop-pg1.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 0;
   }
 
   .headline {
@@ -645,7 +652,8 @@ Media query for desktop version at 768px
   .desktop-menu {
     display: flex;
     gap: 12px;
-    padding-right: 142px;
+    padding-right: 40px;
+    margin-top: 0;
   }
 
   .card1-container,
