@@ -245,4 +245,12 @@ function checkMail(mail) {
 }
 
 // adding eventlistener to Get in touch button
+getInTouch.addEventListener('click', (event) => {
+  if (!checkMail(mail)) {
+    event.preventDefault();
+    // then display error message
+    errMsg.classList.add('.err-msg');
+    errMsg.textContent = 'Please enter your email in lowercase, try again!';
+  }
+});
 
