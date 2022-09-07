@@ -545,6 +545,10 @@ textarea {
   color: #6070ff;
 }
 
+.err-msg {
+  color: #f00;
+}
+
 .end-line {
   width: 134px;
   height: 5px;
