@@ -221,3 +221,37 @@ document.getElementById('0').onclick = displayPopUp;
 document.getElementById('1').onclick = displayPopUp;
 document.getElementById('2').onclick = displayPopUp;
 document.getElementById('3').onclick = displayPopUp;
+
+/*
+------------------------------------
+Check E-mail Validity for Lowercase
+====================================
+*/
+
+const mail = document.getElementById('mail');
+const getInTouch = document.querySelector('.contact-btn');
+const errMsg = document.querySelector('.err-msg');
+
+// check for input validity
+function checkMail(mail) {
+  let result = false;
+
+  const mailToLowerCase = mail.value.toLowerCase();
+  if (mail.value === mailToLowerCase) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
+}
+
+// adding eventlistener to Get in touch button
+getInTouch.addEventListener('click', (event) => {
+  if (!checkMail(mail)) {
+    event.preventDefault();
+
+    // then display error message
+    errMsg.classList.add('.err-msg');
+    errMsg.textContent = 'Please enter your email in lowercase, try again!';
+  }
+});
