@@ -234,18 +234,18 @@ seeProject4.onclick = openPopUp;
 Check E-mail Validity for Lowercase
 ====================================
 */
-const enterEmail = document.getElementById('mail');
-const submitForm = document.querySelector('.contact-btn');
+const submitForm = document.querySelector('#contact-form');
+const enterEmail = document.querySelector('#mail');
 const invalidMsg = document.querySelector('.error-msg');
-// convert the input to lowercase
-const enterEmailLowerCase = enterEmail.value.toLowerCase();
 
 // adding eventlistener to Get in touch button
-submitForm.addEventListener('click', (event) => {
-  if (enterEmailLowerCase !== enterEmail.value) {
+submitForm.addEventListener('submit', (event) => {
+  if (enterEmail.value !== enterEmail.value.toLowerCase()) {
     event.preventDefault();
     // then display error message
     invalidMsg.classList.add('.error-msg');
-    invalidMsg.textContent = 'Please enter your email in lowercase, try again!';
+    invalidMsg.innerHTML = 'Please enter your email in lowercase, try again!';
+  } else {
+    invalidMsg.textContent = '';
   }
 });
