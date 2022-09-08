@@ -214,7 +214,7 @@ const seeProject2 = document.getElementById('1');
 const seeProject3 = document.getElementById('2');
 const seeProject4 = document.getElementById('3');
 
-function closePopUp() {
+function openPopUp() {
   if (modal.style.display === 'none') {
     const e = Number(this.id);
     modal.innerHTML = popUpWindow[e];
@@ -224,10 +224,10 @@ function closePopUp() {
   }
 }
 
-seeProject1.onclick = closePopUp;
-seeProject2.onclick = closePopUp;
-seeProject3.onclick = closePopUp;
-seeProject4.onclick = closePopUp;
+seeProject1.onclick = openPopUp;
+seeProject2.onclick = openPopUp;
+seeProject3.onclick = openPopUp;
+seeProject4.onclick = openPopUp;
 
 /*
 ------------------------------------
