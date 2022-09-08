@@ -4,19 +4,19 @@ Toggle function for the Overlay Mobile menu
 -------------------------------------------
 */
 
-const overlay = document.getElementById('overlay1');
+const mobileMenu = document.getElementById('mobile-menu');
 
-function toggleOverlay() {
-  if (overlay.style.display === 'none') {
-    overlay.style.display = 'block';
+function showMobileMenu() {
+  if (mobileMenu.style.display === 'none') {
+    mobileMenu.style.display = 'block';
   }
 }
-toggleOverlay();
+showMobileMenu();
 
-function toggleOffOverlay() {
-  overlay.style.display = 'none';
+function exitMobileMenu() {
+  mobileMenu.style.display = 'none';
 }
-toggleOffOverlay();
+exitMobileMenu();
 
 /*
 ------------------------------
@@ -24,7 +24,7 @@ Data Object stored in an Array
 ------------------------------
 */
 
-const projectData = [
+const worksData = [
   {
     id: 1,
     title: 'Tonic',
@@ -119,80 +119,81 @@ const projectData = [
   ------------------------------------------------
   */
 const myPortfolio = document.querySelector('.works-wrapper');
-const displayProjectData = projectData.map((project, index) => `<div class="card1-container">
+const displayWorksData = worksData.map((works, index) => `<div class="card1-container">
 <div class="image-holder">
   <div class="mobile">
    <img 
-   src=${project.screenshot.screenshotMobile} 
+   src=${works.screenshot.screenshotMobile} 
    alt="tonic mobile snapshoot"
    class="">
   </div>
   <div class="desktop">
    <img 
-   src=${project.screenshot.screenshotDesktop} 
+   src=${works.screenshot.screenshotDesktop} 
    alt="tonic desktop snapshoot"
    class="">
   </div>
 </div>
 <div class="category-a">
-   <h1 class="project-title">${project.title}</h1>
+   <h1 class="project-title">${works.title}</h1>
    <div class="project-desc">
-      <p class="client">${project.info.client}</p>
+      <p class="client">${works.info.client}</p>
       <img src="./images/counter.svg" alt="counter">
-      <p class="role">${project.info.role}</p>
+      <p class="role">${works.info.role}</p>
       <img src="./images/counter.svg" alt="another counter">
-      <p class="year">${project.info.year}</p>
+      <p class="year">${works.info.year}</p>
    </div>
-   <p class="read-msg">${project.description.descMobile}</p>
+   <p class="read-msg">${works.description.descMobile}</p>
    <ul class="tech-tags">
-      <li><button class="html-btn">${project.skills[0]}</button></li>
-      <li><button class="css-btn">${project.skills[1]}</button></li>
-      <li><button class="javascript-btn">${project.skills[2]}</button></li>
+      <li><button class="html-btn">${works.skills[0]}</button></li>
+      <li><button class="css-btn">${works.skills[1]}</button></li>
+      <li><button class="javascript-btn">${works.skills[2]}</button></li>
    </ul>
    <button class="see-project-btn" id=${index}>See Project</button>
 </div>
 </div>`).join('');
 
-myPortfolio.innerHTML = displayProjectData;
+myPortfolio.innerHTML = displayWorksData;
 
-const popUpWindow = projectData.map((project) => `<div class="popup-container" id="popup">
+const popUpWindow = worksData.map((works) => `<div class="popup-container" id="popup">
 <div class="popup-holder">
    <div class="close-popup">
-      <h1 class="project-title">${project.title}</h1>
+      <h1 class="work
+      -title">${works.title}</h1>
       <img src="./images/cancel.svg" onclick="closePopUpWindow()" alt="close popup dialog" id="close">
    </div>
    <div class="project-desc">
-      <p class="client">${project.info.client}</p>
+      <p class="client">${works.info.client}</p>
       <img src="./images/counter.svg" alt="counter">
-      <p class="role">${project.info.role}</p>
+      <p class="role">${works.info.role}</p>
       <img src="./images/counter.svg" alt="another counter">
-      <p class="year">${project.info.year}</p>
+      <p class="year">${works.info.year}</p>
    </div>
    <div class="image-holder">
    <div class="mobile">
    <img 
-   src=${project.screenshot.screenshotMobile} 
+   src=${works.screenshot.screenshotMobile} 
    alt="tonic mobile snapshoot"
    class="">
   </div>
   <div class="desktop">
    <img 
-   src=${project.screenshot.screenshotDesktop} 
+   src=${works.screenshot.screenshotDesktop} 
    alt="tonic desktop snapshoot"
    class="">
   </div>
    </div>
    <div class="bottom-block">
-      <p class="read-desc">${project.description.descPopup}</p>
+      <p class="read-desc">${works.description.descPopup}</p>
       <div>
          <div class="tech-tags">
-            <button class="html-btn">${project.skills[0]}</button>
-            <button class="css-btn">${project.skills[1]}</button>
-            <button class="javascript-btn">${project.skills[2]}</button>
+            <button class="html-btn">${works.skills[0]}</button>
+            <button class="css-btn">${works.skills[1]}</button>
+            <button class="javascript-btn">${works.skills[2]}</button>
          </div>
          <div class="live-btn">
-            <a href="#"><img src="./images/see-live-btn.svg" alt="see live button" class="see-live"></a>
-            <a href="#"><img src="./images/see-source-btn.svg" alt="see source button" class="see-source"></a>
+            <a href=${works.liveLink}><img src="./images/see-live-btn.svg" alt="see live button" class="see-live"></a>
+            <a href=${works.sourceLink}><img src="./images/see-source-btn.svg" alt="see source button" class="see-source"></a>
          </div>
       </div>
    </div>
@@ -205,19 +206,46 @@ function closePopUpWindow() {
   modal.style.display = 'none';
 }
 closePopUpWindow();
+
 // function to display the popup Window
 
-function displayPopUp() {
+const seeProject1 = document.getElementById('0');
+const seeProject2 = document.getElementById('1');
+const seeProject3 = document.getElementById('2');
+const seeProject4 = document.getElementById('3');
+
+function openPopUp() {
   if (modal.style.display === 'none') {
-    const x = Number(this.id);
-    modal.innerHTML = popUpWindow[x];
+    const e = Number(this.id);
+    modal.innerHTML = popUpWindow[e];
     modal.style.display = 'block';
   } else {
     modal.style.display = 'none';
   }
 }
 
-document.getElementById('0').onclick = displayPopUp;
-document.getElementById('1').onclick = displayPopUp;
-document.getElementById('2').onclick = displayPopUp;
-document.getElementById('3').onclick = displayPopUp;
+seeProject1.onclick = openPopUp;
+seeProject2.onclick = openPopUp;
+seeProject3.onclick = openPopUp;
+seeProject4.onclick = openPopUp;
+
+/*
+------------------------------------
+Check E-mail Validity for Lowercase
+====================================
+*/
+const submitForm = document.querySelector('#contact-form');
+const enterEmail = document.querySelector('#mail');
+const invalidMsg = document.querySelector('.error-msg');
+
+// adding eventlistener to Get in touch button
+submitForm.addEventListener('submit', (event) => {
+  if (enterEmail.value !== enterEmail.value.toLowerCase()) {
+    event.preventDefault();
+    // then display error message
+    invalidMsg.classList.add('.error-msg');
+    invalidMsg.innerHTML = 'Please enter your email in lowercase, try again!';
+  } else {
+    invalidMsg.textContent = '';
+  }
+});

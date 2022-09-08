@@ -12,7 +12,7 @@
       <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
       </a>
       <nav>
-         <a href="#" onclick="toggleOverlay()">
+         <a href="#" onclick="showMobileMenu()">
             <img 
             src="./images/hamburger.svg" 
             alt="hamburger menu"
@@ -53,16 +53,16 @@
            </section>
 
            <!-- Overlay for the hamburger menu -->
-         <div  class="overlay" id="overlay1">
+         <div class="mobile-nav" id="mobile-menu">
             <div class="close-icon" >
-               <a href="#" onclick="toggleOffOverlay()">
+               <a href="#" onclick="exitMobileMenu()">
                   <img 
                   src="./images/close.svg" 
                   alt="hamburger close"
                   class="close-img" id="close" >
                   </a>
             </div>
-            <nav class="overlay-menu" onclick="toggleOffOverlay()">
+            <nav class="overlay-menu" onclick="exitMobileMenu()">
               <a href="#portfolio">
                   <p>Portfolio</p>
                </a>
@@ -162,7 +162,7 @@
             <p class="contact-desc">
                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
             </p>
-            <form action="https://formspree.io/f/xbjbldyw" method="post">
+            <form action="https://formspree.io/f/xbjbldyw" method="post" id="contact-form">
                <div class="form-items">
                   <label for="name">
                      <input type="text" id="name" placeholder="User name" maxlength="30" required>
@@ -173,6 +173,7 @@
                   <label for="message">
                      <textarea name="user_msg" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
                   </label>
+                  <span class="error-msg"></span>
                   <button type="submit" class="contact-btn">Get in Touch</button>
                </div>
             </form>
