@@ -13,7 +13,7 @@ const fetchData = () => {
   userEmail.value = storageData.userEmail;
   userMsg.value = storageData.userMsg;
 };
-
+fetchData();
 userName.addEventListener('change', populateLocalStorage);
 userEmail.addEventListener('change', populateLocalStorage);
 userMsg.addEventListener('change', populateLocalStorage);
