@@ -163,34 +163,10 @@ Works section for the Portfolio begins here
 .card1-container {
   margin-top: 114px;
   padding: 16px;
-  border: 1px solid #dfe1e6;
+  border: 2px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
   height: auto;
-}
-
-.card2-container {
-  margin-top: 88px;
-  padding: 16px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background: #fff;
-}
-
-.card3-container {
-  margin-top: 88px;
-  margin-bottom: 88px;
-  padding: 16px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background: #fff;
-}
-
-.card4-container {
-  padding: 16px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background: #fff;
 }
 
 .image-holder {
@@ -198,8 +174,8 @@ Works section for the Portfolio begins here
   justify-content: center;
 }
 
-.mobile-img img {
-  width: 98.9%;
+.image-holder img {
+  width: 100%;
 }
 
 .work-title {
@@ -656,23 +632,11 @@ Media query for desktop version at 768px
     margin-top: 0;
   }
 
-  .card1-container,
-  .card2-container,
-  .card3-container,
-  .card4-container {
+  .card1-container {
     display: flex;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .card2-container,
-  .card4-container {
-    flex-direction: row-reverse;
-  }
-
-  .card3-container {
-    border: 2px solid #a7aeff;
   }
 
   .tonic {
