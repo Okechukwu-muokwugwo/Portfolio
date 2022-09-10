@@ -163,7 +163,7 @@ Works section for the Portfolio begins here
 .card1-container {
   margin-top: 114px;
   padding: 16px;
-  border: 2px solid #dfe1e6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
   height: auto;
@@ -256,7 +256,6 @@ Works section for the Portfolio begins here
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  margin-top: 24px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: #fff;
