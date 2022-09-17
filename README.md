@@ -12,7 +12,7 @@
 - Linters: webhint, stylelint
 
 ## Live Demo
-Checkout my portfolio <code>https://okechukwu-muokwugwo.github.io/Okechukwu-Portfolio</code>
+Checkout my portfolio [Live Demo](https://okechukwu-muokwugwo.github.io/Okechukwu-Portfolio)
 
 ## Getting Started
 
@@ -34,9 +34,9 @@ Then open it in web browser
 
 👤 **Author**
 
-- GitHub: [@Okechukwu-muokwugwo](https://github.com/Okechukwu-muokwugwo)
-- Twitter: [@excel4eva](https://twitter.com/excel4eva)
-- LinkedIn: [okei.muokwugwo](https://linkedin.com/in/okei.muokwugwo)
+- GitHub: [GitHub](https://github.com/Okechukwu-muokwugwo)
+- Twitter: [Twitter](https://twitter.com/excel4eva)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/okeimuokwugwo)
 
 
 ## 🤝 Contributing
