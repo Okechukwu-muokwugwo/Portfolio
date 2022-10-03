@@ -12,7 +12,7 @@
 - Linters: webhint, stylelint
 
 ## Live Demo
-Checkout my portfolio [Live Demo](https://okechukwu-muokwugwo.github.io/Okechukwu-Portfolio)
+Checkout my portfolio [Live Demo](https://okechukwu-muokwugwo.github.io/Portfolio)
 
 ## Getting Started
 
@@ -57,4 +57,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
