@@ -601,11 +601,10 @@ Media query for desktop version at 768px
     background-image: url('./images/bg-desktop-pg1.svg');
     background-repeat: no-repeat;
     background-size: contain;
-
-    /* margin-top: 0; */
   }
 
   .headline {
+    padding-top: 150px;
     margin-bottom: 10px;
   }
 
