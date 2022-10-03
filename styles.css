@@ -15,7 +15,6 @@ body {
   width: 100%;
   height: 730px;
   border-radius: 0 0 0 100px;
-  background: #fff;
 }
 
 .toolbar {
@@ -23,18 +22,17 @@ body {
   justify-content: space-between;
   padding-top: 28px;
   width: 100%;
-  background: #fff;
 }
 
 .hamburger-img {
-  padding-right: 36px;
+  padding-right: 1rem;
 }
 
 .my-logo img {
   padding-left: 24px;
 }
 
-.main {
+main {
   box-sizing: border-box;
   background: #fff;
   background-image: url('./images/bg-mobile1.svg');
@@ -42,7 +40,6 @@ body {
   background-size: contain;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: -50px;
   width: 100%;
   height: 625px;
   border-radius: 0 0 0 100px;
@@ -53,11 +50,11 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 52px;
-  padding-top: 120px;
+  padding-top: 3rem;
   color: #091e42;
   animation-duration: 4s;
   animation-name: slideIn;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
 
 @keyframes slideIn {
@@ -66,7 +63,7 @@ body {
     width: 300%;
   }
 
-  60% {
+  70% {
     margin-left: 30%;
     width: 250%;
     font-size: 52px;
@@ -254,8 +251,10 @@ Works section for the Portfolio begins here
   width: 124px;
   height: 48px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: #fff;
@@ -533,7 +532,6 @@ style for popup dialog
 -------------------------------------
 */
 .popup-container {
-  /* display: none; */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -591,6 +589,7 @@ Media query for desktop version at 768px
     justify-content: space-between;
     width: 100%;
     background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 
   .intro-container {
@@ -598,11 +597,12 @@ Media query for desktop version at 768px
     height: 916px;
   }
 
-  .main {
+  main {
     background-image: url('./images/bg-desktop-pg1.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 0;
+
+    /* margin-top: 0; */
   }
 
   .headline {
