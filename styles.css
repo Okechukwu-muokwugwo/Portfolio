@@ -18,13 +18,18 @@ body {
 }
 
 .toolbar {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
 .hamburger-img {
+  padding-top: 1rem;
   padding-right: 1rem;
 }
 
@@ -50,7 +55,7 @@ main {
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 52px;
-  padding-top: 3rem;
+  padding-top: 150px;
   color: #091e42;
   animation-duration: 4s;
   animation-name: slideIn;
@@ -112,10 +117,9 @@ Overlay for the hamburger menu
   padding-top: 15px;
   display: none;
   width: 100%;
-  height: 812px;
-  background: #6070ff;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(4px);
+  height: 700px;
+  background: rgba(96,112,255,.9);
+  backdrop-filter: blur(3px);
   z-index: 1;
 }
 
