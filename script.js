@@ -27,46 +27,45 @@ Data Object stored in an Array
 const worksData = [
   {
     id: 1,
-    title: 'Tonic',
+    title: 'Capstone',
     info: {
-      client: 'CANOPY',
-      role: 'Back End Dev',
-      year: 2015,
+      client: 'AspireAfrik',
+      role: 'Front End Dev',
+      year: 2022,
     },
     screenshot: {
-      screenshotMobile: './images/snapshoot-mobile1.svg',
-      screenshotDesktop: './images/snapshot-desktop1.svg',
+      screenshotMobile: './images/aspire-mobile.png',
+      screenshotDesktop: './images/aspire-desktop.png',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile: 'In this project, I designed a website for AspireAfrik International Ltd as a leading IT firma in web development and with the latest technologies available in the industry. It highlights various programs they offer and resource persons for the session.',
+      descDesktop: 'In this project, I designed a website for AspireAfrik International Ltd as a leading IT firma in web development and with the latest technologies available in the industry. It highlights various programs they offer and resource persons for the session.',
+      descPopup: 'In this project, I designed a website for AspireAfrik International Ltd as a leading IT firma in web development and with the latest technologies available in the industry. It highlights various programs they offer and resource persons for the session.',
     },
     skills: ['html', 'css', 'javascript'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://okechukwu-muokwugwo.github.io/Capstone-html-css-Js/',
+    sourceLink: 'https://github.co/Okechukwu-muokwugwo/capstone-hmtl-css-js.git',
   },
 
   {
     id: 2,
-    title: 'Multi-Post Stories',
+    title: 'To-Do List',
     info: {
-      client: 'Canopy',
+      client: 'Daily Routine',
       role: 'Back End Dev',
-      year: 2015,
+      year: 2022,
     },
     screenshot: {
-      screenshotMobile: './images/snapshot-mobile2.svg',
-      screenshotDesktop: './images/snapshot-desktop2.svg',
+      screenshotMobile: './images/todolist.png',
+      screenshotDesktop: './images/todolist.png',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile: 'This is a simple HTML To Do tasks. The user will also be able to mark task completion by selecting the corresponding checkbox. The updated tasks list is stored in local storage.',
+      descPopup: 'This is a simple HTML To Do tasks. The user will also be able to mark task completion by selecting the corresponding checkbox. The updated tasks list is stored in local storage.',
     },
     skills: ['html', 'css', 'javascript'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://okechukwu-muokwugwo.github.io/ToDoList/dist/',
+    sourceLink: 'https://github.com/Okechukwu-muokwugwo/ToDoList.git',
   },
   {
     id: 3,
@@ -81,8 +80,7 @@ const worksData = [
       screenshotDesktop: './images/snapshot-desktop3.svg',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descMobile: 'his is a simple HTML To Do tasks. The user will also be able to mark task completion by selecting the corresponding checkbox. The updated tasks list is stored in local storage.',
       descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     skills: ['html', 'css', 'Ruby'],
@@ -130,8 +128,7 @@ const displayWorksData = worksData.map((works, index) => `<div class="card1-cont
   <div class="desktop">
    <img 
    src=${works.screenshot.screenshotDesktop} 
-   alt="tonic desktop snapshoot"
-   class="">
+   alt="tonic desktop snapshoot">
   </div>
 </div>
 <div class="category-a">
@@ -173,14 +170,12 @@ const popUpWindow = worksData.map((works) => `<div class="popup-container" id="p
    <div class="mobile">
    <img 
    src=${works.screenshot.screenshotMobile} 
-   alt="tonic mobile snapshoot"
-   class="">
+   alt="tonic mobile snapshoot">
   </div>
   <div class="desktop">
    <img 
    src=${works.screenshot.screenshotDesktop} 
-   alt="tonic desktop snapshoot"
-   class="">
+   alt="tonic desktop snapshoot">
   </div>
    </div>
    <div class="bottom-block">
