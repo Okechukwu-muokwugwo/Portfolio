@@ -636,6 +636,7 @@ Media query for desktop version at 768px
 
   .card1-container {
     display: flex;
+    align-items: center;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -650,7 +651,7 @@ Media query for desktop version at 768px
   }
 
   .read-msg {
-    width: 80%;
+    width: 65%;
   }
 
   .image-holder .mobile {
